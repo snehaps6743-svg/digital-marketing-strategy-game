@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Strategy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME PAGE -->
+    <div id="homePage" class="page active">
+        <div class="container">
+            <h1>🎯 Digital Marketing Strategy Game</h1>
+            <h2>FoodRush</h2>
+
+            <p>
+                Welcome to the Digital Marketing Strategy Game!
+            </p>
+
+            <p>
+                You are the Digital Marketing Manager of FoodRush.
+                Make the right marketing decisions and improve the success
+                of the food delivery service.
+            </p>
+
+            <button onclick="showInstructions()">Start Game</button>
+        </div>
+    </div>
+
+
+    <!-- INSTRUCTIONS PAGE -->
+    <div id="instructionsPage" class="page">
+        <div class="container">
+            <h1>📋 Game Instructions</h1>
+
+            <ul>
+                <li>You will face 5 marketing scenarios.</li>
+                <li>Read each situation carefully.</li>
+                <li>Select the best marketing strategy.</li>
+                <li>Each choice gives you a different score.</li>
+                <li>Your final score will be displayed at the end.</li>
+            </ul>
+
+            <button onclick="startGame()">Continue</button>
+        </div>
+    </div>
+
+
+    <!-- GAME PAGE -->
+    <div id="gamePage" class="page">
+        <div class="container">
+
+            <p id="scenarioNumber"></p>
+
+            <h1 id="scenarioTitle"></h1>
+
+            <p id="scenarioDescription"></p>
+
+            <div id="choices"></div>
+
+            <p id="feedback"></p>
+
+            <button id="nextButton" onclick="nextScenario()" style="display:none;">
+                Next Scenario
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- RESULT PAGE -->
+    <div id="resultPage" class="page">
+        <div class="container">
+            <h1>🎉 Game Completed!</h1>
+
+            <h2>Your Final Score</h2>
+
+            <div id="finalScore"></div>
+
+            <h2 id="finalMessage"></h2>
+
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
